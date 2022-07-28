@@ -78,7 +78,7 @@ fun main() {
     }
 
     //using is and Any
-    //Any menas it can be any type
+    //Any means it can be any type
     //is checks if our variable is of the type we name
     var x: Any = 13.37
     when (x) {
