@@ -23,4 +23,16 @@ fun main() {
     //dividing integer values
     val intDiv = 16/3
     println(intDiv)
+
+
+
+    //comparison operators (==, !=, <, >, <=, >=)
+    val isEqual = 3==8
+    println("Is isEqual false or true? of course it is $isEqual!")
+
+    val notEqual = 3!=4
+    println("Is notEqual false or true? of course it is $notEqual!")
+
+    //comparison without saving it in a variable
+    println("is 5 greater than 3? That's ${5>3}")
 }
