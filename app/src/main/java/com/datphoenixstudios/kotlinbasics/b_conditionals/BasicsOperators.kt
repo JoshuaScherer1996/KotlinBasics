@@ -35,4 +35,26 @@ fun main() {
 
     //comparison without saving it in a variable
     println("is 5 greater than 3? That's ${5>3}")
+
+
+
+
+    //assignment operators (+=, -=, *=, /=, %=)
+    var myNum = 5
+    println("myNum is: $myNum")
+    myNum += 5
+    println("myNum is: $myNum")
+    myNum *= 10
+    println("myNum is: $myNum")
+
+    //Increment and drecement (++, --)
+    myNum++
+    println("myNum is: $myNum")
+    println("myNum is: ${myNum++}")
+    println("myNum is: ${++myNum}")
+    //difference of putting it before or after:
+    //line 53 increses after finished executing the line (end of line)
+    //line 54 increses before we finish executing the line (beginning of line)
+    myNum--
+    println("myNum is: $myNum")
 }
