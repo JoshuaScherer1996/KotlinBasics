@@ -48,4 +48,52 @@ fun main() {
     } else {
         println("It's cloudy today")
     }
+
+
+    //when expression -> similar to switch statements
+    val season = 3
+
+    when (season) {
+        1 -> println("Spring")
+        2 -> println("Summer")
+        3 ->{
+            println("Fall")
+            println("Alternative name: Autumn")
+        }
+        4 -> println("Winter")
+        //else is the case that executes if none of the other cases fit
+        else -> println("Invalid Season!")
+    }
+    //goes through the cases and selects the one that fits the condition
+
+    var month = 7
+    when (month) {
+        // in and .. take a range. First case is all numbers from 3 to 5
+        in 3..5 -> println("Spring")
+        in 6..8 -> println("Summer")
+        in 9..11 -> println("Fall")
+        // we select certain cases ourselves
+        12, 1, 2 -> println("Winter")
+        else -> println("Invalid Season!")
+    }
+
+    //using is and Any
+    //Any menas it can be any type
+    //is checks if our variable is of the type we name
+    var x: Any = 13.37
+    when (x) {
+        is Int -> println("$x is an Int")
+        is Double -> println("$x is a Double")
+        is String -> println("$x is a String")
+        else -> println("$x is none of the above")
+    }
+
+    //same code as above only with the negation used in cases
+    var y: Any = 13.37f
+    when (y) {
+        is Int -> println("$x is an Int")
+        !is Double -> println("$x is not a Double")
+        is String -> println("$x is a String")
+        else -> println("$x is none of the above")
+    }
 }
