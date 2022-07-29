@@ -45,4 +45,30 @@ fun main() {
        println(x)
        x++
     } while (x > 100)
+
+    //for every (variable in current iteration - keyword in - a range) {do this}
+    for (num in 1..10){
+        println(num)
+    }
+
+    //instead of .. using until
+    for (i in 1 until 10){
+        print(i)
+    }
+
+    //throw away print to organize my output
+    println("")
+
+    //using down to
+    for (j in 10 downTo 1) {
+        print(j)
+    }
+
+    //throw away print to organize my output
+    println("")
+
+    //using steps
+    for (nr in 10 downTo 1 step 2) {
+        print(nr)
+    }
 }
