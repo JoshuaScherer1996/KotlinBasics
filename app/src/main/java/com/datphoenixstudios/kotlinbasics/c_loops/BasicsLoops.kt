@@ -23,6 +23,15 @@ fun main() {
 
         //cleaner way
         num -= 2
-
     }
+
+    //throw away print to organize my output
+    println("")
+
+    // do {this code} while (this condition is true)
+    x = 1
+    do {
+       println(x)
+       x++
+    } while (x > 100)
 }
