@@ -28,6 +28,17 @@ fun main() {
     //throw away print to organize my output
     println("")
 
+    //using strings and combining if and while
+    var feltTemp = "cold"
+    var roomTemp = 10
+    while (feltTemp == "cold") {
+        roomTemp++
+        if (roomTemp >= 20) {
+            feltTemp = "warm"
+            println("It's warm now!")
+        }
+    }
+
     // do {this code} while (this condition is true)
     x = 1
     do {
