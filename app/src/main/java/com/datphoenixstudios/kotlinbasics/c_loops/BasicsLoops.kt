@@ -71,4 +71,21 @@ fun main() {
     for (nr in 10 downTo 1 step 2) {
         print(nr)
     }
+
+    //throw away print to organize my output
+    println("")
+
+    //break and continue
+    for (i in 1 until 10) {
+        //break interrupts the loop at a defined point
+        if (i/2 == 4) {
+            break
+        }
+        //continue jumps over the chosen iteration and continues the loop
+        if (i == 4) {
+            continue
+        }
+        print(i)
+    }
+    print("\nDone with the loop!")
 }
