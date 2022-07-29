@@ -1,6 +1,9 @@
 package com.datphoenixstudios.kotlinbasics.b_conditionals
 
 fun main() {
+
+    //if statements
+    //first declaring some needed variables
     val weightPerson1 = 80
     val weightPerson2 = 90
 
