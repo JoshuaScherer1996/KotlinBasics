@@ -12,6 +12,30 @@ fun main() {
 
     //using the myAverage func in one line
     println(myAverage(23.4,54.0))
+
+    var name: String = "Josh"
+    // name = null -> Compilation error. When we create and assign a variable it is of a non null type
+
+    //here null is ok cause the ? says, the value can be null. Sets a "Nullable string"
+    var nullableName: String? = "Josh"
+    nullableName = null
+
+    var len = name.length
+    //var len2 = nullableName.length -> Error! Says only safe(?) or non-null asserted(!!) are allowed
+
+    //old way - check via if
+    if (nullableName != null) {
+        var len2 = nullableName.length
+    } else {
+        null
+    }
+
+    //new way 1 with Kotlin (which is the same as the if statement above)
+    var len2 = nullableName?.length
+    //basically ? says: could be null but for now we assume it's not
+
+    //If you only want to print something only when it truely isn't null -> safecall(?) with let
+    nullableName?.let { println(it.length) }
 }
 
 //STRUCTURE: keyword fun - name of the function - () - {function does this code when called}
