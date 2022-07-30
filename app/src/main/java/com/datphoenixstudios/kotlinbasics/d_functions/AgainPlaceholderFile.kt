@@ -35,7 +35,7 @@ fun main() {
     //basically ? says: could be null but for now we assume it's not
 
     //If you only want to print something only when it truely isn't null -> safecall(?) with let
-    nullableName?.let { println(it.length) }
+    //nullableName?.let { println(it.length) }
 }
 
 //STRUCTURE: keyword fun - name of the function - () - {function does this code when called}
