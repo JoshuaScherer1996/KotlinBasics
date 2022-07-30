@@ -34,8 +34,24 @@ fun main() {
     var len2 = nullableName?.length
     //basically ? says: could be null but for now we assume it's not
 
-    //If you only want to print something only when it truely isn't null -> safecall(?) with let
+    //if you only want to print something only when it truely isn't null -> safecall(?) with let
     //nullableName?.let { println(it.length) }
+
+    //sometimes we assign a new variable (which means it should be non nullable) with a nullable object
+    //here we can use the elvis operator
+    var name2 = nullableName ?: "Guest"
+    println(name2)
+    //checks, if nullableName is empty. If yes we use default value Guest. Otherwise we use the already
+    //assigned value.
+
+    //not null assertion operator !! - Converts nullable in not nullable and if it is null it throws an exception
+
+    //nullableName!!.toLowerCase() -> Nullpointer exception cause nullableName is in fact null
+    nullableName = "Josh"
+    println(nullableName!!.lowercase())
+    //now it prints "josh" cause nullableName isn't null
+
+    //note: safecall can be used in a chain call. Example: user?.wife?.age ?: 0
 }
 
 //STRUCTURE: keyword fun - name of the function - () - {function does this code when called}
