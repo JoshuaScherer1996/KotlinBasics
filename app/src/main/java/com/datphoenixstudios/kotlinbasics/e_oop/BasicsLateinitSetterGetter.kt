@@ -10,9 +10,11 @@ fun main() {
     myCar.maxSpeed = 200
     //here we GET the speed in our println
     println("The max speed of my car is: ${myCar.maxSpeed}")
+    //myCar.myModel = "M3" -> Doesn't work cause we can't set this property outside of our class
+    //even though the setter is private, the getter isn't. we can get our property publicly
+    println("The model of my car: ${myCar.myModel}")
     //checking if our exception gets thrown
     myCar.maxSpeed = -5
-
 }
 
 class Car() {
@@ -43,9 +45,16 @@ class Car() {
             field = if (value >= 0) value else throw IllegalArgumentException("Max speed cannot be less than 0!")
         }
 
+    var myModel: String = "M5"
+        //here we devlare that our setter is private
+        //private means that we can only set the variable here within the class
+        private set
+
     //We initialise the varibale we declared as late init
     init {
         //this specifies, that we use the owner we declared up top
         this.owner = "Frank"
+        //here we can set the value of myModel because it is still within the same class
+        this.myModel = "M3"
     }
 }
