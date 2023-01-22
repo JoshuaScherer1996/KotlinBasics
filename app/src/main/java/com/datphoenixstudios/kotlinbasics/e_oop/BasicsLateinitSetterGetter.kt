@@ -50,7 +50,7 @@ class Car() {
         //private means that we can only set the variable here within the class
         private set
 
-    //We initialise the varibale we declared as late init
+    //We initialise the variable we declared as late init
     init {
         //this specifies, that we use the owner we declared up top
         this.owner = "Frank"
