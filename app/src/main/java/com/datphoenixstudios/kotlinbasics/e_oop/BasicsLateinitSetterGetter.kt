@@ -46,7 +46,7 @@ class Car() {
         }
 
     var myModel: String = "M5"
-        //here we devlare that our setter is private
+        //here we declare that our setter is private
         //private means that we can only set the variable here within the class
         private set
 
