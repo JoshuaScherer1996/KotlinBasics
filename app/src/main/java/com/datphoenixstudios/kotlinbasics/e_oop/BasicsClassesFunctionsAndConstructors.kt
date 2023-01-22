@@ -6,7 +6,7 @@ fun main() {
     appDev.hobby = "to read manga"
     appDev.stateHobby()
     var john = Person2()
-    john.hobby = "do play guitar"
+    john.hobby = "to play guitar"
     john.stateHobby()
     //our variables here are objects. john and appDev are objects. basically everything with a datatype
     //is an object in Kotlin
@@ -20,7 +20,7 @@ fun main() {
 class Person2(firstName: String = "John", lastName: String = "Doe") {
     //member variable - properties
     var age: Int? = null
-    var hobby: String = "playing videogams"
+    var hobby: String = "playing videogames"
     //creating new variable to clearly show the functionality of keyword this
     var firstName: String = ""
 
@@ -32,7 +32,7 @@ class Person2(firstName: String = "John", lastName: String = "Doe") {
     }
     //member secondary constructor
     constructor(firstName: String, lastName: String, age: Int)
-            //this this says that the first and last name we are using comes from the primary constructor
+            //this says that the first and last name we are using comes from the primary constructor
             : this(firstName, lastName) {
                 //the age given through the constructor (after the =) is the value of the parameter
                 //this.age references the age variable of the class
